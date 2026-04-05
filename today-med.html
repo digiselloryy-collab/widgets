@@ -21,37 +21,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 92%; 
+    width: 94%; 
     max-width: 450px;
-    height: 180px;
-    /* Deep Emerald / Surgeon Green */
-    background: linear-gradient(145deg, #1a3a3a, #0d2121);
-    border: 2px solid #bfa07a; /* Antique Gold */
-    border-radius: 16px;
+    height: 160px;
+    /* Professional Medical Emerald */
+    background: linear-gradient(135deg, #134e4a 0%, #06201e 100%);
+    border: 2px solid #bfa07a; 
+    border-radius: 15px;
     text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.4);
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-  }
-
-  .widget-button:hover {
-    transform: scale(1.02);
-    border-color: #f7e6c4;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    -webkit-tap-highlight-color: transparent;
   }
 
   .label {
-    color: #f7e6c4; /* Cream Ivory */
-    font-size: 3.2rem;
+    color: #f7e6c4; 
+    font-size: 2.8rem;
     font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
   }
 
   .subtext {
-    color: #bfa07a; /* Gold */
-    font-size: 0.85rem;
-    margin-top: 8px;
+    color: #bfa07a; 
+    font-size: 0.8rem;
+    margin-top: 5px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 600;
@@ -60,20 +54,11 @@
 </head>
 <body>
 
-  <div class="widget-button" onclick="openNotion()">
+  <a href="notion://www.notion.so/a758e1e6cb8b498a9d52503d9b440b3a?v=8d006429a94944628090f91be078565e" 
+     class="widget-button">
     <span class="label">Today</span>
     <span class="subtext">Daily Rounds</span>
-  </div>
-
-  <script>
-    function openNotion() {
-      const url = "https://www.notion.so/a758e1e6cb8b498a9d52503d9b440b3a?v=8d006429a94944628090f91be078565e&source=copy_link";
-      
-      // This works on both PC and Android
-      // It forces a new tab which bypasses PC security blocks
-      window.open(url, '_blank');
-    }
-  </script>
+  </a>
 
 </body>
 </html>
